@@ -1,4 +1,5 @@
 import yt_dlp
+import ffmpeg
 import shutil
 VIDEOS_PATH = '../videos'
 
@@ -10,4 +11,11 @@ ydl_opts = {
 }
 
 with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+    info_dict = ydl.extract_info(url, download=False)  # solo info, non scarica
+    filename = ydl.prepare_filename(info_dict)
     ydl.download([url])
+
+output_file = VIDEOS_PATH + '/' +"output.mp4"
+input_file = filename
+
+ffmpeg.input(input_file, ss=90, to=180).output(output_file, c='copy').run()

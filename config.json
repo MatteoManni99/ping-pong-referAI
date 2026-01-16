@@ -1,0 +1,9 @@
+{
+    "MODEL_URL_HEAVY": "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_heavy/float16/1/pose_landmarker_heavy.task",
+    "MODEL_URL_FULL": "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_full/float16/1/pose_landmarker_full.task",
+    "MODEL_URL_LITE": "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_lite/float16/1/pose_landmarker_lite.task",
+    "youtube_video_1": "https://www.youtube.com/watch?v=c-T30NAhJE0",
+    "youtube_video_2": "https://www.youtube.com/shorts/kWePYEdVbhc",
+    "PATH_VIDEOS":"C:\\Users\\m.manni\\ping-pong-referAI\\videos",
+    "VIDEO_SELECTION":"youtube_video_2"
+}
